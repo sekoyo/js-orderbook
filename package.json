@@ -1,0 +1,41 @@
+{
+  "name": "orderbook",
+  "version": "1.0.0",
+  "description": "A fast orderbook implementation",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "rimraf ./dist && tsc",
+    "test": "mocha -r ts-node/register 'src/**/*.test.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominicTobias/js-orderbook.git"
+  },
+  "keywords": [
+    "orderbook",
+    "matching",
+    "engine"
+  ],
+  "author": "Dominic Tobias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominicTobias/js-orderbook/issues"
+  },
+  "homepage": "https://github.com/DominicTobias/js-orderbook#readme",
+  "dependencies": {
+    "big.js": "^6.1.1",
+    "bintrees": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/big.js": "^6.1.2",
+    "@types/bintrees": "^1.0.3",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
